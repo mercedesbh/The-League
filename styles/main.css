@@ -1,0 +1,33 @@
+/* CCS - later in the sheet can override earlier in the sheet, unless it's more 
+specific with a class or id */
+
+body {
+    background:#999;
+    font-family:'Gill Sans';
+}
+
+h1 {
+    color: #555;
+}
+
+a {
+    color: red;
+}
+
+p {
+    background: #666;
+    color: white;
+    padding: 10px;
+    /* padding = top, right, bottom, left, or let one apply to all */
+}
+
+.secondary {
+    background: none;
+    color: #777; 
+}
+
+/* IDs are a little bit faster, classes are a little bit slower */
+#chicago {
+    background: lightblue;
+    color: red;
+}
