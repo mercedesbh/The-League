@@ -10,7 +10,8 @@ public class Programmatic extends ProgrammaticSuper{
         int number = 10;
         Scanner scanner = new Scanner(System.in);
         test(number);
-        tempConversion(scanner);
+        // tempConversion(scanner);
+        uniqueCharacters(scanner);
 
         //Checks to see if an array is empty, if it is, it will fill it with items
         List <String> items = new ArrayList<>(); 
@@ -35,12 +36,30 @@ public class Programmatic extends ProgrammaticSuper{
         return temp;
     }
 
+    //Java program to manipulate lists
     public static void returnList(List items) {
         if (items.size() == 0) {
             System.out.println("The list is empty!");
         }
+    }
 
-        
+    //Java program to determine if a string has all unique characters.
+    public static boolean uniqueCharacters(Scanner scanner) {
+        boolean[] char_set = new boolean[256];
+        System.out.println("Enter a string: ");
+        String string = scanner.nextLine();
+        System.out.println(string);
+        for (int i = 0; i < string.length(); i++ ) {
+            int val = string.charAt(i);
+            if (char_set[val]) {
+                System.out.println("The string does not contain all unique characters");
+                return false;
+            } else {
+            char_set[val] = true; 
+            }
+        }
+        System.out.println("The string contains all unique characters");
+        return true;
     }
 
 
