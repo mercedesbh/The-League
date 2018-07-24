@@ -1,4 +1,8 @@
 import React from 'react';
+import { Route } from "react-router-dom";
+import HomePage from "./components/pages/HomePage";
+import LoginPage from "./components/pages/LoginPage";
+
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -19,6 +23,11 @@ import React from 'react';
 //   }
 // }
 
-const App = () => <div> The League </div>
+const App = () => (
+  <div className= "ui container"> 
+    <Route path="/" exact component={HomePage} />
+    <Route path="/login" exact component={LoginPage} />
+  </div>
+);
 
 export default App;
