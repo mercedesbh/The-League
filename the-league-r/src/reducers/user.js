@@ -1,5 +1,5 @@
 //Reducer is just a function that takes state and actions and returns new state
-import { USER_LOGGED_IN } fro m "../types";
+import { USER_LOGGED_IN } from "../types";
 
 //The boilerplate
 export default function user(state = {}, action = {}) {
