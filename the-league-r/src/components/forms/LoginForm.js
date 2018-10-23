@@ -4,7 +4,6 @@ import { Form, Button, Message } from "semantic-ui-react";
 import Validator from "validator";
 import InlineError from "../messages/InlineError";
 
-// Login form
 class LoginForm extends React.Component {
   state = {
     data: {
